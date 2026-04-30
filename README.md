@@ -8,17 +8,19 @@ The analysis uses Python for data cleaning and exploration, then summarizes the 
 
 Netflix has a large and diverse content library across countries, genres, release years, and audience ratings. This project explores that dataset to identify how Netflix content has grown over time, which countries contribute the most titles, and what type of audience the platform mainly targets.
 
-The project includes a Jupyter Notebook, cleaned dataset, dashboard PDF, and written insights report.
+The project includes a Jupyter Notebook, cleaned dataset, dashboard PDF, dashboard image, and written insights report.
 
-## Dashboard
+## Dashboard Preview
 
-The dashboard is included as a PDF file in this repository:
+![Netflix Dashboard](netflix.png)
+
+## Dashboard File
+
+The dashboard is also included as a PDF file in this repository:
 
 ```text
 netflix_dashboard.pdf
 ```
-
-Open `netflix_dashboard.pdf` to view the final dashboard summary.
 
 ## Files in This Repository
 
@@ -26,6 +28,7 @@ Open `netflix_dashboard.pdf` to view the final dashboard summary.
 netflix.ipynb              Jupyter Notebook for data cleaning, analysis, and visualization
 netflix_cleaned (1).csv    Cleaned Netflix dataset used for analysis
 netflix_dashboard.pdf      Dashboard summary of the analysis
+netflix.png                Dashboard preview image
 Insights.md                Written business insights and recommendations
 README.md                  Project documentation
 ```
@@ -149,7 +152,6 @@ Insights.md
 
 ## Possible Improvements
 
-- Add dashboard screenshots directly to the README.
 - Rename the cleaned dataset to `netflix_cleaned.csv`.
 - Add more visualizations inside the notebook.
 - Include predictive analysis for future content growth.
