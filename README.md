@@ -1,127 +1,159 @@
 # Netflix Content Analysis
 
-This project analyzes Netflix’s global content dataset to understand content growth, regional distribution, audience targeting, and platform strategy.
+Netflix Content Analysis is a data analytics project focused on exploring Netflix movies and TV shows using Python, cleaned CSV data, dashboard visuals, and business insights.
 
-The analysis uses Python for data cleaning and exploration, then summarizes the findings through a dashboard and written business insights.
+The project analyzes content type, release trends, country distribution, ratings, genres, and platform-level catalog patterns to understand how Netflix content is structured and how the platform has evolved over time.
 
-## Project Overview
+## Live Demo
 
-Netflix has a large and diverse content library across countries, genres, release years, and audience ratings. This project explores that dataset to identify how Netflix content has grown over time, which countries contribute the most titles, and what type of audience the platform mainly targets.
+Not deployed. This project is presented through a Jupyter Notebook, cleaned dataset, dashboard PDF, dashboard images, and an insights file.
 
-The project includes a Jupyter Notebook, cleaned dataset, dashboard PDF, dashboard image, and written insights report.
+## Preview
 
-## Dashboard Preview
+### Dashboard Screens
 
-![Netflix Dashboard](netflix.png)
+| Netflix Dashboard | Type Distribution |
+|---|---|
+| ![Netflix Dashboard](netflix.png) | ![Type Distribution](s2.png) |
 
-## Dashboard File
+| Release Trends | Country Insights |
+|---|---|
+| ![Release Trends](s3.png) | ![Country Insights](s4.png) |
 
-The dashboard is also included as a PDF file in this repository:
+| Final Dashboard View |
+|---|
+| ![Final Dashboard View](s6.png) |
+
+### Dashboard Report
+
+The project also includes a full dashboard/report export:
 
 ```text
 netflix_dashboard.pdf
 ```
 
-## Files in This Repository
+## Project Highlights
 
-```text
-netflix.ipynb              Jupyter Notebook for data cleaning, analysis, and visualization
-netflix_cleaned (1).csv    Cleaned Netflix dataset used for analysis
-netflix_dashboard.pdf      Dashboard summary of the analysis
-netflix.png                Dashboard preview image
-Insights.md                Written business insights and recommendations
-README.md                  Project documentation
-```
+- Analyzes Netflix movies and TV shows.
+- Uses cleaned Netflix catalog data.
+- Explores content type distribution between Movies and TV Shows.
+- Analyzes release year trends and platform content growth.
+- Studies country-wise content availability.
+- Reviews ratings, genres, and catalog patterns.
+- Includes a Jupyter Notebook for Python-based analysis.
+- Includes dashboard PNG images for quick visual review.
+- Includes a dashboard PDF for report-style presentation.
+- Includes an insights markdown file for key findings.
+- Suitable for Data Analyst and Business Intelligence fresher portfolios.
 
-## Objectives
-
-- Analyze Netflix content growth over time.
-- Study geographical distribution of Netflix titles.
-- Understand audience targeting through content ratings.
-- Identify major countries contributing to Netflix’s catalog.
-- Create a dashboard summary for business interpretation.
-- Convert raw content data into structured insights.
-
-## Dataset
-
-The project uses the Netflix Titles Dataset in CSV format.
-
-Key columns used:
-
-- `title`
-- `country`
-- `release_year`
-- `date_added`
-- `rating`
-- `duration`
-- `listed_in`
-
-The dataset was cleaned and prepared for trend analysis, country-level analysis, rating distribution, and dashboard creation.
-
-## Tools and Technologies
+## Tech Stack
 
 - Python
 - Pandas
-- NumPy
+- Matplotlib
+- Seaborn
 - Jupyter Notebook
-- IBM Cognos Analytics
-- CSV data analysis
-- Dashboard reporting
+- CSV
+- Data Cleaning
+- Data Analysis
+- Data Visualization
+- Dashboard Reporting
+- PDF Dashboard
 
-## Methodology
+## Dataset
 
-### Data Cleaning
+The included cleaned dataset is:
 
-- Handled missing values.
-- Processed categorical columns.
-- Converted date fields into usable date formats.
-- Standardized column formats.
-- Prepared country, rating, and year-based fields for analysis.
+```text
+netflix_cleaned (1).csv
+```
 
-### Data Preparation
+The dataset contains Netflix catalog information such as content type, title, country, release year, rating, duration, genre/listed category, and related metadata.
 
-- Extracted year from `date_added`.
-- Aggregated content counts by year.
-- Processed country data for geographical analysis.
-- Grouped content by rating for audience segmentation.
-- Prepared cleaned data for dashboard development.
+## Main Files
 
-### Dashboard Development
+```text
+netflix.ipynb                Jupyter Notebook with analysis workflow
+netflix_cleaned (1).csv      Cleaned Netflix dataset
+netflix_dashboard.pdf        Dashboard report/export
+netflix.png                  Main dashboard image
+Insights.md                  Key insights and observations
+README.md                    Project documentation
+s2.png                       Dashboard screenshot
+s3.png                       Dashboard screenshot
+s4.png                       Dashboard screenshot
+s6.png                       Dashboard screenshot
+```
 
-The dashboard includes:
+## Analysis Approach
 
-- Global content distribution map
-- Content distribution by rating
-- Netflix content growth over time
-- Business-focused visual summary
+The project follows a standard data analytics workflow:
 
-## Key Insights
+```text
+Load cleaned Netflix dataset
+        ↓
+Review dataset structure and columns
+        ↓
+Clean and prepare data for analysis
+        ↓
+Analyze Movies vs TV Shows distribution
+        ↓
+Explore release year and content growth trends
+        ↓
+Analyze country-wise content contribution
+        ↓
+Study ratings, genres, and duration patterns
+        ↓
+Create dashboard visuals
+        ↓
+Export dashboard/report
+        ↓
+Summarize insights for business interpretation
+```
 
-### Content Growth Trends
+## Main Features
 
-Netflix content increased significantly after 2016, with peak content addition around 2019-2020. A slight decline after 2020 suggests a possible shift from rapid expansion toward more selective content strategy.
+### Netflix Catalog Analysis
 
-### Geographical Distribution
+The project studies Netflix's content library and identifies trends in movies, TV shows, ratings, countries, genres, and release years.
 
-The United States, India, and the United Kingdom contribute a large share of Netflix content. This shows Netflix’s strong dependence on established content markets.
+### Content Type Breakdown
 
-### Audience Targeting
+The analysis compares the distribution of Movies and TV Shows to understand the platform's content mix.
 
-Most Netflix titles fall under mature audience categories such as TV-MA and TV-14. This suggests that Netflix primarily targets adult and teen audiences.
+### Release Trend Analysis
 
-### Business Interpretation
+The project explores how Netflix content has grown over time and highlights release-year patterns.
 
-Netflix’s catalog strategy appears focused on mature content and major content-producing countries. Future opportunities may exist in expanding family-friendly content and improving regional diversity.
+### Country and Genre Insights
 
-## Recommendations
+The analysis identifies major content-producing countries and commonly occurring content categories.
 
-- Expand content production in emerging markets.
-- Increase investment in children and family-friendly content.
-- Balance mature content with broader audience categories.
-- Continue monitoring content growth after peak expansion years.
-- Use regional content gaps to guide future catalog strategy.
+### Dashboard Reporting
 
-## How to Use This Project
+The repository includes `netflix_dashboard.pdf` as a final dashboard report and PNG images for quick preview.
+
+### Insights Summary
+
+The `Insights.md` file contains key findings and observations from the analysis.
+
+## Project Structure
+
+```text
+Netflix-Content-Analysis/
+├── Insights.md
+├── README.md
+├── netflix.ipynb
+├── netflix.png
+├── netflix_cleaned (1).csv
+├── netflix_dashboard.pdf
+├── s2.png
+├── s3.png
+├── s4.png
+└── s6.png
+```
+
+## Setup
 
 Clone the repository:
 
@@ -130,37 +162,65 @@ git clone https://github.com/aishidutta13/Netflix-Content-Analysis.git
 cd Netflix-Content-Analysis
 ```
 
-Open the notebook:
+Install required Python libraries:
 
-```text
-netflix.ipynb
+```bash
+pip install pandas matplotlib seaborn jupyter
 ```
 
-Run the notebook cells in order to view the data cleaning and analysis workflow.
+Open the notebook:
 
-Open the dashboard file:
+```bash
+jupyter notebook netflix.ipynb
+```
+
+## How To View The Dashboard
+
+View the dashboard images directly in the README:
+
+```text
+netflix.png
+s2.png
+s3.png
+s4.png
+s6.png
+```
+
+Or open the full dashboard PDF:
 
 ```text
 netflix_dashboard.pdf
 ```
 
-Read the insights file:
+## Example Use Cases
 
-```text
-Insights.md
-```
+- Netflix catalog analysis
+- Movies vs TV Shows comparison
+- Content release trend analysis
+- Country-wise content analysis
+- Genre and rating analysis
+- Data analyst portfolio project
+- Business intelligence dashboard practice
+- Exploratory data analysis practice
+- Entertainment data analytics
 
-## Possible Improvements
+## Current Limitations
 
-- Rename the cleaned dataset to `netflix_cleaned.csv`.
-- Add more visualizations inside the notebook.
-- Include predictive analysis for future content growth.
-- Add genre-level and country-level deep dives.
-- Create an interactive dashboard using Streamlit or Plotly.
+- The project is not deployed as an interactive dashboard.
+- Dashboard interactivity is limited because the final output is exported as PDF/images.
+- The analysis depends on the available cleaned dataset.
+- More detailed statistical analysis can be added in future versions.
+- SQL-based analysis can be added for stronger analyst portfolio value.
 
-## Conclusion
+## Future Improvements
 
-This project demonstrates how data analysis can be used to understand Netflix’s content strategy. The findings show strong content growth after 2016, concentration in major content-producing countries, and a focus on mature audience categories.
+- Add interactive dashboard using Power BI, Tableau, Streamlit, or Plotly Dash.
+- Add SQL queries for Netflix catalog analysis.
+- Add more detailed business recommendations.
+- Include additional screenshots from the notebook.
+- Add charts directly inside the README.
+- Add an executive summary section.
+- Deploy an interactive version publicly.
 
 ## Author
 
